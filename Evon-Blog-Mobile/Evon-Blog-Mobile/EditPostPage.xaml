@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="EvonBlogMobile.EditPostPage">
+
+    <StackLayout Padding="15">
+        <Label Text="Title" />
+        <Entry x:Name="titleEntry" Placeholder="Post Title" />
+        
+        <Label Text="Post" />
+        <Editor x:Name="bodyEntry" VerticalOptions="FillAndExpand" Keyboard="Chat" Placeholder="Type your content here..." />
+
+        <Button Text="Publish Post" Clicked="Publish_Button_Clicked" ></Button>
+    </StackLayout>
+</ContentPage>
+

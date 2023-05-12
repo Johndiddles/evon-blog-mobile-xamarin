@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="EvonBlogMobile.SignupPage">
+
+    <StackLayout VerticalOptions="Center" Padding="5,5,5,5" BackgroundColor="White">
+        <StackLayout VerticalOptions="Center" Background="white" Padding="20,20">
+            <!--<ListView x:Name="postListView"></ListView>-->
+            <Entry x:Name="usernameEntry" Placeholder="Enter Username" />
+            <Entry x:Name="emailEntry" Placeholder="Enter Email" Keyboard="Email" />
+            <Entry x:Name="passwordEntry" Placeholder="Enter Password" IsPassword="True" />
+            <Entry x:Name="confirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" />
+            <Button x:Name="signupButton" Clicked="SignUp_Button_Clicked" Text="SIGN UP" ></Button>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0,0,10">
+            <Label Text="Have an account?" />
+            <Label Text="Login Instead" TextColor="blue" x:Name="Login_Label" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Login_Label_Tapped" NumberOfTapsRequired="1" />
+
+                </Label.GestureRecognizers>
+
+            </Label>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+

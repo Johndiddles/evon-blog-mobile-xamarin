@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="EvonBlogMobile.SinglePost">
+
+    <StackLayout Padding="15, 10">
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Edit" BackgroundColor="Black" x:Name="EditButton" Clicked="EditPostButton_Clicked"></Button>
+            <Button Text="Delete" BackgroundColor="DarkRed" x:Name="DeleteButton" Clicked="DeletePostButton_Clicked"></Button>
+
+        </StackLayout>
+        <Label x:Name="postTitleLabel" FontAttributes="Bold" FontSize="Title" />
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="postAuthorLabel" FontSize="Caption" />
+            <Label x:Name="postTimeLabel" FontSize="Caption"/>
+        </StackLayout>
+        
+        <Label x:Name="postBodyLabel" />
+
+    </StackLayout>
+</ContentPage>
+
